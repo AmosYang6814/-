@@ -1,0 +1,18 @@
+<view class="comment_view">
+  <block wx:for="{{comment}}">
+  <view class='vi' style='display:flex'>
+  <image  class='comment_image' src='{{item.touxiang_url}}'></image>
+  
+  <view class='comment_re' style='display:flex' >
+
+ <text class="text_response"></text>
+  <view class='text_comment_view' style='display:flex' >
+  <text class="text_comment" > :{{item.frist_comment}}</text>
+   <image   class='zan' src='{{item.url}}' bindtap='click' id='{{index}}' ></image>
+   </view>
+  <text class="text_response">回复 : {{item.response}}</text>
+  </view>
+
+   </view>
+  </block>
+</view>

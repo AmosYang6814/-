@@ -1,0 +1,16 @@
+<!--pages/denglu/denglu.wxml-->
+<view class="Main">
+  <image class='touxiang' src='../../image/wode_Press.png'></image>
+  <input placeholder='用户名/邮箱/微信' class='username' ></input>
+  <input placeholder='密码' class='password' ></input>
+  <button  class='button' >登 录</button>
+   <view class='view1' >
+   <text  class='zhuce' >注册 >> </text>
+   </view>
+   <view class='view2' style='display:flex' >
+   <image class='thirdbutton' src='../../image/qq.png'></image>
+   <image class='thirdbutton' src='../../image/weibo.png'></image>
+   <image class='thirdbutton' src='../../image/weixin.png'></image>
+   </view>
+
+</view>

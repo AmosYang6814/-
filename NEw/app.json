@@ -1,0 +1,45 @@
+{
+  "pages":[
+
+    "pages/index/index",
+    "pages/wxlogin/wxlogin",
+      "pages/next/next",
+    "pages/mine/mine",
+    "pages/newsfollow/newsfollow",
+      "pages/denglu/denglu",
+      "pages/default/default",
+    "pages/logs/logs",
+    "pages/news/news",
+    "pages/content/content"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff0000",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"black"
+  },
+ "tabBar": {
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "selectedIconPath": "image/shouye_Press.png",
+      "iconPath": "image/shouye.png"
+    },
+    {
+      "pagePath": "pages/newsfollow/newsfollow",
+      "text": "关注",
+      "selectedIconPath": "image/guanzhu_Press.png",
+      "iconPath": "image/guanzhu.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "selectedIconPath": "image/wode_Press.png",
+      "iconPath": "image/wode.png"
+    }
+  ],
+  "color": "#dbdbdb",
+  "selectedColor": "#d81e06"
+}
+}

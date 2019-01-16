@@ -1,0 +1,43 @@
+<!-- 新闻主页面 -->
+<view class="news_all">
+  <!-- 头部start -->
+  <view class="head" style="">
+    <image class="head_image" src="../../img/logo.png" mode="widthFix"></image>
+    <view class="search_view">
+      <input class="search_input" value="{{text1}}"bindinput="binput"   type="text" placeholder='习近平改革开放'></input>
+      <!--<button>搜索</button>-->
+      <button class="search_button" bindtap="research">
+        <cover-image class="search_button_img" src='../../img/magnifier.png' mode="widthFix"></cover-image>
+      </button>
+    </view>
+    <view class="category">
+      <view id='头条' bindtap='search' style='color:{{color[0]}}'>头条</view>
+      <view id='段子' bindtap='search' style='color:{{color[1]}}'>段子</view>
+      <view id='娱乐' bindtap='search' style='color:{{color[2]}}'>娱乐</view>
+      <view id='体育' bindtap='search' style='color:{{color[3]}}'>体育</view>
+      <view id='军事' bindtap='search' style='color:{{color[4]}}'>军事</view>
+      <view id='历史' bindtap='search' style='color:{{color[5]}}'>历史</view>
+      <view id='漫画' bindtap='search' style='color:{{color[6]}}'>漫画</view>
+    </view>
+  </view>
+  <!-- 头部end -->
+<view class="content">
+<block wx:for="{{content}}" wx:for-item="i">
+    <!-- 新闻一 -->
+    <view class="content_view">
+      <!-- 左边标题、时间、类别 -->
+      <view class="content_left">
+        <view bindtap='enternew' id='{{index}}' class="content_left_title">{{i.title}}</view>
+       <view class="content_left_bottom">
+         <view  class="content_left_time">{{i.pubDate}}</view>
+         <view class="content_left_type">{{i.channelName}}</view>
+       </view>
+       </view>
+    <view class="content_right">
+          <image wx:if="{{i.imageurls[0].url}}" class="content_right_img" src="{{i.imageurls[0].url}}" mode="widthFix"></image>
+           <image wx:else class="content_right_img" src="../../img/logo.png" mode="widthFix"></image>
+    </view>
+   </view>
+  </block>
+  </view>
+   </view>

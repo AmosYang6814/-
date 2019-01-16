@@ -1,0 +1,42 @@
+<!--pages/mine/mine.wxml-->
+<!-- <text>快速登陆</text> -->
+<view class="flex-wrp" style="flex-direction:row;"wx:if="{{!hasuerfo }}" >
+    <image  bindtap='touchEvent' src='../../image/phone.png' class="login1"></image>
+    <image  src='../../image/weibo.png' class="login2" bindtap='touchEvent'></image> 
+    <view bindtap='touchwxEvent'>
+    <image  src='../../image/weixin.png' class="login2" bindtap=""></image>
+    </view>
+    <image  src='../../image/qq.png' class="login2" bindtap='touchEvent'></image> 
+</view>
+
+<view class="flex-wrp" wx:if="{{!hasuerfo }}">
+<button class='but' bindtap='touchLoginEvent'>登陆/注册</button>
+<!-- <image src='../../image/zhuce.png' class="login3" bindtap="onFunction1"></image> -->
+</view>
+
+<view class="userinfo"wx:if="{{hasuerfo }}" >
+      <image bindtap='' class="userinfo-avatar" src="{{userfor.avatarUrl}}"    mode="cover"></image>
+      <text class="userinfo-nickname">{{userfor.nickName}}</text>
+  </view>
+<view class="flex-wrp" style="flex-direction:row" >
+    <image bindtap='touchEvent' src='../../image/comment.png' class="login4" ></image>
+    <image bindtap='touchEvent' src='../../image/collect.png' class="login5" ></image> 
+    <image bindtap='touchEvent' src='../../image/history.png' class="login5" ></image>
+</view>
+
+
+
+<view class="flex-wrp" style="flex-direction:row;border-bottom:5px solid #eeeff3">
+<text class="login6" bindtap='touchEvent'>评论</text>
+<text class="login7" bindtap='touchEvent'>收藏</text>
+<text class="login7" bindtap='touchEvent'>记录</text>
+</view>
+ <view bindtap='follow' class='text_view' style='display:flex' >
+<view class='v1' >我的关注</view>
+<image   src='../../image/forward.png' class='forward'></image>
+</view>
+
+<view bindtap='touchEvent' class='text_view' style='display:flex' wx:for="{{list}}" wx:for-item="i">
+<view class='v1'>{{i.name}}</view>
+<image   src='../../image/forward.png' class='forward'></image>
+</view>

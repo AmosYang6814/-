@@ -1,0 +1,49 @@
+<!-- 正文页面 -->
+<view class="news_all">
+  <!-- 头部start -->
+  <view class="head">
+    <!-- 返回按钮start -->
+    <view class="back">
+      <image src="../../img/back.png" class="back_img"></image>
+      <view bindtap='ba' class="back_view">返回</view>
+    </view>
+    <!-- 返回按钮end -->
+    <view class="reply" bindtap='comment' >2331人参与跟帖</view>
+  </view>
+  <!-- 头部end -->
+
+  <!-- 正文start -->
+  <view class="content">
+    <!-- 标题 -->
+    <view>
+      <view class="title">
+      {{content.title}}
+      </view>
+    </view>
+    <!-- 出处和时间 -->
+    <view class="st">
+      <!-- 出处 -->
+      <text  wx:if="{{content.source}}" class="source" mode="widthFix">出自：{{content.source}}</text>
+      <text  wx:else class="source">出自：中国新闻网</text>  
+      <!-- 时间 -->
+      <view class="time" mode="widthFix">时间：</view>
+      <view mode="widthFix">{{content.pubDate}}</view>
+    </view>
+    <!-- 正文内容 -->
+    <view>
+      <view class="content_c">
+      {{content.desc}}
+      </view>
+      <!-- 图片start -->
+      <block wx:for="{{content.imageurls}}" wx:for-item="i">
+      <view style="text-align:center;">
+
+        <image  src="{{i.url}}" style="margin:0 auto;width:80%" mode="widthFix"></image>
+      </view>
+       </block>
+      <!-- 图片end -->
+    </view>
+  </view>
+  <!-- 正文end -->
+</view>
+

@@ -1,0 +1,59 @@
+page {
+  height: 100%;
+}
+.head {
+  width: 100%;
+  border-bottom: 1px solid #c4c4c4;
+  height: 114rpx;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  background-color:#ffffff;
+}
+.back {
+  display: flex;
+  flex-direction: row;
+}
+.back_img {
+  width: 50rpx;
+  height: 40rpx;
+  margin: 40rpx 0 0 36rpx;
+}
+.back_view {
+  margin: 34rpx 0 0 0;
+}
+.reply {
+  border: 1px solid red;
+  padding: 6rpx 20rpx 0 20rpx;
+  height: 40rpx;
+  border-radius: 30rpx;
+  margin: 36rpx 0 0 320rpx;
+  color: red;
+  font-size: 26rpx;
+}
+.content {
+  padding-top: 114rpx;
+}
+.title {
+  text-align: center;
+  margin: 20rpx 0 20rpx 0;
+}
+.st {
+  display: flex;
+  flex-direction: row;
+  color: #9e9aad;
+  font-size: 32rpx;
+  padding: 20rpx 0 20rpx 0;
+}
+.source {
+  margin-left: 44rpx;
+}
+.time {
+  margin-left: 80rpx;
+}
+.content_c {
+  padding: 20rpx 18rpx 20rpx 38rpx;
+  line-height: 50rpx;
+  font-family: '宋体';
+  text-indent: 80rpx;
+}

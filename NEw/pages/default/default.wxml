@@ -1,0 +1,52 @@
+<!-- 正文页面 -->
+<view class="news_all">
+  <!-- 头部start -->
+  <view class="head">
+    <!-- 返回按钮start -->
+    <view class="back">
+      <image src="../../img/back.png" class="back_img"></image>
+      <view class="back_view" bindtap='ba'>返回</view>
+    </view>
+    <!-- 返回按钮end -->
+    <view class="reply" bindtap='comment'>2333人参与跟帖</view>
+  </view>
+  <!-- 头部end -->
+
+  <!-- 正文start -->
+  <view class="content">
+    <!-- 标题 -->
+    <view>
+      <view class="title">
+      宠物一家
+      </view>
+    </view>
+    <!-- 出处和时间 -->
+    <view class="st">
+      <!-- 出处 -->
+      <view class="source">出自：</view>
+      <view>中国新闻网</view>
+      <!-- 时间 -->
+      <view class="time">时间：</view>
+      <view>2018-10-1</view>
+    </view>
+    <!-- 正文内容 -->
+    <view>
+      <view class="content_c">
+      二哈成熟的卡通形象，已经成为腾讯空间粉丝会的文化载体，在粉丝会游戏核心用户中产生了广泛的影响。二哈卡通形象源自粉丝会，是为推广正能量传递游戏快乐而生。在粉丝用户群体中具有天然的亲和力，游戏粉丝用户对二哈形象具有强烈的认同感。
+二哈公仔形象
+二哈公仔形象
+David and Sasa 传奇组合简称二哈，来自遥远的汪星。
+　　David(☉_o) 看世界的眼神总是那么与众不同，Sasa(· _· )总是那么萌呆可爱。二哈犯二的时候，总能秒杀人类的所有烦忧。2012年12月21日，二哈带着汪星人的使命与责任感，拯救了地球，拯救了人类，这是一种什么样的二哈精神！
+　　2013年，二哈不辞辛劳，再次带着着汪星人的使命与责任感，毫不利己，专门利人，来到空间粉丝会拯救人类的快乐。2013年1月14日，二哈集中汪星旺财旺桃花的所有正能量，化身为幸运信使，提前一个月为大家带来了神奇旺财旺桃花勋章。
+　　当你拥有了旺财旺，遇到汪星人时就可以问一下：我下面的财运和桃花运会不会很旺呢？汪星人会毫不犹豫的告诉你：旺！旺财旺桃花章：旺财代表成功，旺桃花代表幸福，旺财旺桃花勋章为渴望成功渴望幸福您准备。
+      </view>
+      <!-- 图片start -->
+      <view style="text-align:center;">
+        <image src="../../img/demo1.jpg" style="margin:0 auto;width:80%" mode="widthFix"></image>
+      </view>
+      <!-- 图片end -->
+    </view>
+  </view>
+  <!-- 正文end -->
+</view>
+
